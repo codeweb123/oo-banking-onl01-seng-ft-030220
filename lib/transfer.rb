@@ -17,7 +17,7 @@ class Transfer
         @status = "rejected"
         return "Transaction rejected. Please check your account balance."
 
-      
+
 
       elsif @status == "complete"
         puts "Transaction was already excuted"
@@ -27,7 +27,7 @@ class Transfer
         @status = "complete"
       end
     end
-    
+
   def reverse_transfer
     if @status == "complete"
       @sender.balance += @amount
