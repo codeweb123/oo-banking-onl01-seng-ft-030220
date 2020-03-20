@@ -2,10 +2,10 @@ class Transfer
   attr_accessor :sender, :receiver, :status, :amount
 
   def initialize(sender, receiver, amount)
-    @status = "pending" #an instance of the Transfer class initializes with a staus of "pending"
+    @status = "pending" #an instance of the Transfer class initializes with a status of "pending"
     @sender = sender #an instance of the Transfer class initializes with a sender
     @receiver = receiver #an instnace of the Transfer class intitializes with a reciever
-    @amount = amount #an instance of the Transfer class initializes with a an amount
+    @amount = amount #an instance of the Transfer class initializes with an amount
   end
 
   #can check that both accounts are valid & uses #valid? from BankAccount class
