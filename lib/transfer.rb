@@ -9,7 +9,7 @@ class Transfer
   end
 
   #can check that both accounts are valid & uses #valid? from BankAccount class
-  def valid? 
+  def valid?
     if self.sender.valid? == true && self.receiver.valid? == true && sender.balance >= self.amount
       true
     else
